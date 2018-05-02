@@ -1,8 +1,5 @@
-// Make font proportional to window size
-// how to handle swipe?
-
-// Global?
-var letterCode = 'A'.charCodeAt();
+//``TODO Make font proportional to window size
+//``TODO how to handle swipe?
 
 class SlideSet {
   constructor(slides) {
@@ -26,13 +23,15 @@ class SlideSet {
     }
   }
   
-  keyup(event) {
+  keyup(event, displayCallback) {
     if (event.keyCode === 37) {
       this.rewind();
     } else if (event.keyCode === 39) {
       this.advance();
-    } 
-    return this.current();
+    } else {
+      return;
+    }
+    displayCallback(this.current());
   }
 }
 
@@ -75,10 +74,7 @@ $(() => {
 
   const slideSet = phoenician;
 
-  $(document).keyup((e) => {
-    //``TODO return no change code?
-    const slide = slideSet.keyup(e);
-  
+  const display = (slide) => {
     //``TODO map doesn't make sense here. even a js list would be better.
     //``TODO maybe 2 lists: letter + names. validate same size. if blank val, ignore.
     const letter = Object.keys(slide)[0];
@@ -86,6 +82,11 @@ $(() => {
 
     const name = Object.values(slide)[0];
     console.log(name);
+  };
+
+  //``TODO can't we bind/curry?
+  $(document).keyup((e) => {
+    slideSet.keyup(e, display);
   });
 
   // Initialize to start.
