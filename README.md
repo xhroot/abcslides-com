@@ -1,5 +1,7 @@
 # abcslides.com
 
-source code for display quick slide show of letters/numbers etc.  on http://abcslides.com
+Source code for http://abcslides.com.
 
-(Todos)[TODO.md]
+The original goal was to simply display the letters A-Z, navigable by LR cursors.  But it seemed easy to extend to other alphabets, flash cards, randomization, touch swipe vs LR key, so here we are.
+
+[Todos](TODO.md)
