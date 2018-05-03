@@ -30,7 +30,7 @@ A couple solutions:
 1. browsing around, I saw a really sketchy way of using Symbol() to create an interface, was pretty gross.
 1. use Typescript, a javascript superset but with interfaces
 
-As we progress to the last point, we should ask "If jettison all the bad quirks of javascript and import features of our favorite languages, why retain any of the cruft of javascript at all?"
+As we progress to the last point, we should ask "If we jettison all the bad quirks of javascript and import features of our favorite languages, why retain any of the cruft of javascript at all?"
 
 So Dart or Kotlin compiled to js.
 
