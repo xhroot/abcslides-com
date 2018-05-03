@@ -1,8 +1,24 @@
-html,body{
+html,body {
   height: 100%;
   padding: 0;
   margin: 0;
   background: radial-gradient(#91bac5, #3056a0);
+  font-family: arial;
+}
+
+header {
+  background-color: #555;
+  color: #eee;
+  padding: 5px;
+  font-weight: normal;
+}
+
+header a {
+  color: #eee;
+}
+
+header a:hover {
+  text-decoration: none;
 }
 
 #container {
@@ -19,9 +35,9 @@ html,body{
 #question {
   font-size: 30em;
   font-weight: bold;
+  font-family: Times;
 }
 
 #answer {
   font-size: 10em;
-  font-family: arial;
 }

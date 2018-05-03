@@ -12,6 +12,7 @@
   * current
   * answer/response
 * hamburger menu
+  * nav menu
 * slide touch
   * hammer.js touch swipe
 * support for chinese character/words
