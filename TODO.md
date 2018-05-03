@@ -17,6 +17,7 @@
 * support for chinese character/words
 * support for localstorage management of custom sets
 * support for randomizing static deck
+* mobile? media query and resize font based on window size
 
 
 # design
