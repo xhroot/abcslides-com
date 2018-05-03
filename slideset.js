@@ -16,7 +16,9 @@ class SlideSet {
   }
 
   advance() {
-    if (!this.showAnswer) {
+    const slide = this.slides[this.position];
+    const hasAnswer = Object.values(slide)[0] !== '';
+    if (hasAnswer && !this.showAnswer) {
       this.showAnswer = true;
     } else if (this.position < this.slides.length-1) {
       this.position++;

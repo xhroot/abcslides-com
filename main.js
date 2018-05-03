@@ -1,7 +1,7 @@
 $(() => {
   //const slideSet = phoenician;
-  //const slideSet = classicalHebrew;
-  const slideSet = greek;
+  const slideSet = classicalHebrew;
+  //const slideSet = greek;
 
   const display = (slide) => {
     const answer = slide.answer.length > 0
