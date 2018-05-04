@@ -6,12 +6,12 @@ $(() => {
       .join(' | ');
   $('#nav').html(navLinks);
 
-  //``TODO slideSet needs a reset()
-  //``TODO bug position is shared? or weird
-  // When new slide set selected, switch to new set and reset position.
+  // When new slide set selected, switch to new set and restart at beginning.
   $('.setLink').click((e) => {
     const newSet = slideSets[e.target.innerText];
+    $(document).off('keyup');
     $(document).keyup(newSet.keyup.bind(newSet, display));
+    newSet.reset();
     display(newSet.current());
   });
   

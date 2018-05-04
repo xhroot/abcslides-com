@@ -7,14 +7,14 @@ html,body {
 }
 
 header {
-  background-color: #555;
-  color: #eee;
-  padding: 5px;
+  background-color: #333;
+  color: #aaa;
+  padding: 8px;
   font-weight: normal;
 }
 
 header a {
-  color: #eee;
+  color: #e8e8e8;
 }
 
 header a:hover {

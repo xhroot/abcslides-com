@@ -1,8 +1,7 @@
 class SlideSet {
   constructor(slides) {
     this.slides = slides;
-    this.position = 0;
-    this.showAnswer = false;
+    this.reset();
   }
 
   current() {
@@ -13,6 +12,11 @@ class SlideSet {
                 ? Object.values(slide)[0] 
                 : '',
     };
+  }
+
+  reset() {
+    this.position = 0;
+    this.showAnswer = false;
   }
 
   advance() {
