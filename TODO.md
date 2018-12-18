@@ -35,5 +35,5 @@ As we progress to the last point, we should ask "If we jettison all the bad quir
 
 So Dart or Kotlin compiled to js.
 
-This is one of the simplest of applications, textbox CS101 interface composition and the latest ES6 javascript can't do it.  I'm bewildered by javascript's defenders.
+This is one of the simplest of applications, textbook CS101 interface composition and the latest ES6 javascript can't do it.  I'm bewildered by javascript's defenders.
 
